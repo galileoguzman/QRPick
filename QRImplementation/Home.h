@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface Home : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *viewPreview;
+@property (weak, nonatomic) IBOutlet UILabel *lblStatus;
 
+- (IBAction)btnStartQRPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnStartStop;
 
 @end
 
