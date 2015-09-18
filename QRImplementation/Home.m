@@ -46,13 +46,14 @@
     
     if (!_isReading) {
         if ([self startReading]) {
-            [self.btnStartStop setTitle:@"Stop" forState:1];
-            [_lblStatus setText:@"Scanning for QR Code..."];
+            [_btnStartStop setTitle:@"Stop" forState:UIControlStateHighlighted];
+            [_lblStatus setText:@"Waiting for QR Code..."];
         }
     }
     else{
         [self stopReading];
-        [self.btnStartStop setTitle:@"Start" forState:1];
+        [self.btnStartStop setTitle:@"Start" forState:UIControlStateHighlighted];
+        [_lblStatus setText:@"Nothing to scan..."];
     }
     
     _isReading = !_isReading;
@@ -122,7 +123,6 @@
 -(void)loadBeepSound{
     // Get the path to the beep.mp3 file and convert it to a NSURL object.
     NSString *beepFilePath = [[NSBundle mainBundle] pathForResource:@"beep" ofType:@"mp3"];
-    NSLog(beepFilePath);
     NSURL *beepURL = [NSURL URLWithString:beepFilePath];
     
     NSError *error;
