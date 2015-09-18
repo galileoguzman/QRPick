@@ -33,6 +33,8 @@
     
     
     _captureSession = nil;
+    
+    [self loadBeepSound];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -120,6 +122,7 @@
 -(void)loadBeepSound{
     // Get the path to the beep.mp3 file and convert it to a NSURL object.
     NSString *beepFilePath = [[NSBundle mainBundle] pathForResource:@"beep" ofType:@"mp3"];
+    NSLog(beepFilePath);
     NSURL *beepURL = [NSURL URLWithString:beepFilePath];
     
     NSError *error;

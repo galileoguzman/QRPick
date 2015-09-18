@@ -17,6 +17,7 @@
 		994537731BAC60D8003BBC5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994537721BAC60D8003BBC5F /* UIKit.framework */; };
 		994537751BAC60E9003BBC5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994537741BAC60E9003BBC5F /* CoreGraphics.framework */; };
 		994537771BAC60F2003BBC5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994537761BAC60F2003BBC5F /* Foundation.framework */; };
+		9945377C1BAC741E003BBC5F /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9945377B1BAC741E003BBC5F /* beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		994537721BAC60D8003BBC5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		994537741BAC60E9003BBC5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		994537761BAC60F2003BBC5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9945377B1BAC741E003BBC5F /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = Media/Audio/beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		994537481BAC554B003BBC5F /* QRImplementation */ = {
 			isa = PBXGroup;
 			children = (
+				994537791BAC73D3003BBC5F /* Media */,
 				994537781BAC60FB003BBC5F /* Frameworks */,
 				994537701BAC557D003BBC5F /* Controllers */,
 				9945376F1BAC556E003BBC5F /* Main */,
@@ -161,6 +164,22 @@
 				994537721BAC60D8003BBC5F /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		994537791BAC73D3003BBC5F /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				9945377A1BAC73D9003BBC5F /* Audio */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		9945377A1BAC73D9003BBC5F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9945377B1BAC741E003BBC5F /* beep.mp3 */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +265,7 @@
 			files = (
 				994537551BAC554B003BBC5F /* Main.storyboard in Resources */,
 				9945375A1BAC554B003BBC5F /* LaunchScreen.xib in Resources */,
+				9945377C1BAC741E003BBC5F /* beep.mp3 in Resources */,
 				994537571BAC554B003BBC5F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
